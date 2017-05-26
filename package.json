@@ -1,5 +1,5 @@
 {
-  "name": "angular2-express-starter",
+  "name": "angular2-express",
   "version": "1.0.0",
   "description": "Starter application of Angular2 with Express",
   "main": "server/app.js",
@@ -9,19 +9,18 @@
     "client": "concurrently --kill-others \"ng serve --aot=true --progress=false --proxy-config proxy.conf.json\"",
     "server": "npm run _server:run",
     "lint:client": "ng lint",
-    "lint:server": "tslint './server/**/*.ts' -c ./server/tslint.json --fix",
+    "lint:server": "tslint './server/**/*.ts' -c tslint.json --fix",
     "test:client": "ng test",
     "test:server": "mocha dist/server/test",
-    "test:serverTypescript": "mocha -r ts-node/register server/test/hello.ts",
     "e2e:client": "ng e2e",
     "build": "ng build --prod --sm=false --aot=true --output-path=dist/client && npm run _server:build",
     "_server:run": "tsc -p ./server && concurrently \"tsc -w -p ./server\" \"nodemon dist/server/bin/www.js\" \"cp server/api/swagger.yaml dist/server/api/swagger.yaml\" ",
     "_server:build": "tsc -p ./server",
     "postinstall": "npm run build"
   },
-  "author": "Vlado Tešanović",
+  "author": "Jacob Nix",
   "repository": {
-    "url": "https://github.com/vladotesanovic/angular2-express-starter"
+    "url": "https://github.com/jacobnix/angular2-express"
   },
   "private": true,
   "dependencies": {
