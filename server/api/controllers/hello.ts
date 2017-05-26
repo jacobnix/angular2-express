@@ -5,11 +5,19 @@ import * as util from 'util';
 
 
 function get(req, res){
-  console.log('I hit the /hello!');
-  var hello = util.format('Hello, Jacob');
+  console.log('Sweet Get!');
+  var hello = util.format('Hello, Jacob?');
 
   // this sends back a JSON response which is a single string
   res.json(hello);
 }
 
-export { get };
+function post(req, res){
+  console.log('Dude Post');
+  var hello = util.format('Nice Post, Jacob!!!');
+
+  // this sends back a JSON response which is a single string
+  res.json(hello);
+}
+
+export { get, post };
