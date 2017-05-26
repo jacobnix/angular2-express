@@ -2,7 +2,7 @@
  * Created by jacob on 5/24/17.
  */
 import {Logger} from 'log4js';
-import {Service, Require} from "typedi";
+import {Require, Service} from 'typedi';
 
 @Service('logger.service')
 export class LoggerService {
@@ -13,7 +13,7 @@ export class LoggerService {
     this.logger = logger;
   }
 
-  info(text: string, data?: any) {
+  public info(text: string, data?: any) {
     this.logger.info(text, ...data);
   }
 }
