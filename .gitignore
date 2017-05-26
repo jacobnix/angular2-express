@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+.idea/
+dist/
+node_modules/
+=======
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
@@ -21,6 +26,7 @@
 /connect.lock
 /coverage/*
 /libpeerconnection.log
+>>>>>>> b20f48a124e0c44aaf45ab2966cdbb9302fcd7e0
 npm-debug.log
 testem.log
 /typings
